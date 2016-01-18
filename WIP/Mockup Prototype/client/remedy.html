@@ -46,21 +46,32 @@
 
             <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav pull-right">
-                  <li class="active">
+                  <li>
                       <a href="index.html">TRANG CHỦ</a>
                   </li>
                   <li>
                       <a href="plant.html">CÂY THUỐC</a>
                   </li>
-                  <li>
+                  <li class="active">
                       <a href="remedy.html">BÀI THUỐC</a>
                   </li>
                   <li>
                       <a href="team.html">Team</a>
                   </li>
-                  <li>
-                      <a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                          <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-user">
+                          <li><a href="profile.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                          </li>
+                          <li class="divider"></li>
+                          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                          </li>
+                      </ul>
+                      <!-- /.dropdown-user -->
                   </li>
+                  <!-- /.dropdown -->
                 </ul>
             </div>
         </div>
@@ -82,7 +93,7 @@
                     <div class="input-group">
                         <span class="input-group-btn">
                             <button class="btn btn-default" data-toggle="tooltip" title="Hiển thị tìm kiếm nâng cao" type="button"
-                            onclick="window.location.href='search.html'">
+                            onclick="window.location.href='searchRemedy.html'">
                                 <i class="fa fa-search-plus"></i>
                             </button>
                         </span>
@@ -110,7 +121,7 @@
                     <p>
                         Ich bin Programmierer von beruf
                     </p>
-                    <a href="#">More</a>
+                    <a href="remedyDetail.html">More</a>
                 </div>
                 <div class="blockquote-box blockquote-primary animated wow fadeInLeft clearfix searchable-item">
                     <div class="square pull-left">
