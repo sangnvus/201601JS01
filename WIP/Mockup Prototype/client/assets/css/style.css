@@ -230,7 +230,9 @@ address {
 .active{
   background:#74B9B9 !important;
   color: white;
-  font-weight: bold; 
+}
+li.active{
+  font-weight: bold;
 }
 .navbar {
   font-weight: bold;
