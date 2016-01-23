@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <!-- meta data & title -->
+        <meta charset="utf-8">
+        <title>Office</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
+
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+  <body>
+	<style type="text/css">
+		.img-footer{
+			height: 100%;
+			width: 100%
+		}
+        .content-manage{
+            background: #F8FAFF !important;
+            color: #000000;
+        }
+
+	</style>
+    <!-- Header -->
+
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand wow fadeInDownBig" href="index.html"><img src="assets/img/slider/Office.png" width="100" alt="Office"></a>
+            </div>
+
+            <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="">
+                        <a href="index.html">TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="plant.html">CÂY THUỐC</a>
+                    </li>
+                    <li>
+                        <a href="remedy.html">BÀI THUỐC</a>
+                    </li>
+                    <li>
+                        <a href="team.html">Team</a>
+                    </li>
+                    <li>
+                        <a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                    <li class="dropdown">
+
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="profile.html"><i class="fa fa-user fa-fw"></i>Trang cá nhân</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="changePassword.html"><i class="fa fa-user fa-pencil"></i> Đổi mật khẩu</a>
+                            </li>
+                            <li><a href="contentManage.html"><span class="glyphicon glyphicon-th-list"></span>Quản lý thông tin</a>
+                            </li>
+                            <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span>Đăng xuất</a>
+                            </li>
+
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Header -->
+    <div class="row container-kamn">
+        <img src="assets/img/system/bannerCay1.jpg" class="blog-post" alt="Feature-img" align="right" width="100%">
+    </div>
+    <div class="container">
+      <h2>Quản lý thông tin cây thuốc</h2>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#newArticle">Bài mới</a></li>
+        <li><a data-toggle="tab" href="#edit">Bài sửa</a></li>
+        <li><a data-toggle="tab" href="#report">Bài vi phạm</a></li>
+        
+      </ul>
+
+      <div class="tab-content ">
+        <div id="newArticle" class="tab-pane fade in active content-manage  ">
+            <h3>Danh sách bài mới</h3>
+            <div class="input-group custom-search-form" style="width:50%;">
+                <input type="text" class="form-control" placeholder="Nhập thông tin tìm kiếm ...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Tên cây thuốc</th>
+                    <th>Người đăng</th>
+                    <th>Ngày đăng</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cỏ nến</td>
+                    <td>John Lenon</td>
+                    <td>25/01/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>Cỏ nhọ nồi</td>
+                    <td>Quynh HT</td>
+                    <td>12/02/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>Huyết dụ</td>
+                    <td>Ronaldo</td>
+                    <td>30/03/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="edit" class="tab-pane fade content-manage">
+          <h3>Danh sách bài sửa</h3>
+          <table class="table">
+                <thead>
+                <tr>
+                    <th>Tên cây thuốc</th>
+                    <th>Người đăng</th>
+                    <th>Ngày đăng</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cỏ nến</td>
+                    <td>John Lenon</td>
+                    <td>25/01/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>Cỏ nhọ nồi</td>
+                    <td>Quynh HT</td>
+                    <td>12/02/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>Huyết dụ</td>
+                    <td>Ronaldo</td>
+                    <td>30/03/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="report" class="tab-pane fade content-manage ">
+          <h3>Danh sách bài vi phạm</h3>
+          <table class="table">
+                <thead>
+                <tr>
+                    <th>Tên cây thuốc</th>
+                    <th>Người đăng</th>
+                    <th>Ngày đăng</th>
+                    <th>Người báo cáo</th>
+                    <th>Ngày báo cáo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cỏ nến</td>
+                    <td>John Lenon</td>
+                    <td>25/01/2016</td>
+                    <td>Quynh HT</td>
+                    <td>12/02/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>Cỏ nhọ nồi</td>
+                    <td>Quynh HT</td>
+                    <td>12/02/2016</td>
+                    <td>Ronaldo</td>
+                    <td>30/03/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>Huyết dụ</td>
+                    <td>Ronaldo</td>
+                    <td>30/03/2016</td>
+                    <td>John Lenon</td>
+                    <td>25/04/2016</td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+              
+              <div class="">
+                <h3><i class="fa fa-heart"></i> Socialize</h3>
+                <div id="social-icons">
+                    <a href="#" class="btn-group google-plus">
+                        <i class="fa fa-google-plus"></i>
+                    </a>  
+                    <a href="#" class="btn-group facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+					<p>&copy; Copyright 2016</p>
+			 </div>
+              </div>
+        </div>
+      </div>
+    </footer>
+
+
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
