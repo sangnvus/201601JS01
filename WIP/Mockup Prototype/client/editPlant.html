@@ -29,6 +29,31 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <script>
+              $(document).ready(function(){
+                  $("#edit").click(function(){
+                    $("#note").attr("readonly", false);
+                    $("#note1").attr("readonly", false);
+                    $("#note2").attr("readonly", false);
+                    $("#note3").attr("readonly", false);
+                    $("#note4").attr("readonly", false);
+                    $("#note5").attr("readonly", false);
+                    $("#note6").attr("readonly", false);
+                  });
+                  $("#save").click(function(){
+                    $("#note").attr("readonly", true);
+                    $("#note1").attr("readonly", true);
+                    $("#note2").attr("readonly", true);
+                    $("#note3").attr("readonly", true);
+                    $("#note4").attr("readonly", true);
+                    $("#note5").attr("readonly", true);
+                    $("#note6").attr("readonly", true);
+                  });
+              });
+
+        </script>
     </head>
 
 
@@ -156,7 +181,7 @@
             <div class="col-md-5">
                 <h3>
                     Thông tin cây thuốc
-                    <button class="btn btn-info"><i class="fa fa-pencil pull-right"></i>Sửa</button>
+                    <button id="edit" class="btn btn-info"><i class="fa fa-pencil pull-right"></i>Sửa</button>
                 </h3>
                 <table class="table table-striped">
                 <colgroup>
@@ -166,31 +191,31 @@
             	<tbody>
 		            <tr>
 		                <td><b>Tên thường gọi:</b></td>
-		                <td>Ngải cứu</a></td>
+		                <td><textarea id="note" readonly style="width:100%">Ngải cứu</textarea></td>
 		            </tr>
 		            <tr>
 		                <td><b>Tên khác:</b></td>
-		                <td>Thuốc cứu, ngải diệp, nhả ngải, quá sú, cỏ linh li</td>
+		                <td><textarea id="note1" readonly style="width:100%">Thuốc cứu, ngải diệp, nhả ngải, quá sú, cỏ linh li</textarea></td>
 		            </tr>
 		            <tr>
 		                <td><b>Tên khoa học:</b></td>
-		                <td>Artemisia vulgaris</td>
+		                <td><textarea id="note2" readonly style="width:100%">Artemisia vulgaris</textarea></td>
 		            </tr>
 		            <tr>
 		                <td><b>Đặc điểm:</b></td>
-		                <td>Là loại cỏ sống lâu năm, thân có rãnh dọc. Lá mọc so le không cuống, màu 2 mặt lá khác nhau, mặt trên nhẵn, màu lục sẫm. Mặt dưới trắng tro, có nhiều lông nhỏ</td>
+		                <td><textarea id="note3" readonly style="width:100%">Là loại cỏ sống lâu năm, thân có rãnh dọc. Lá mọc so le không cuống, màu 2 mặt lá khác nhau, mặt trên nhẵn, màu lục sẫm. Mặt dưới trắng tro, có nhiều lông nhỏ</textarea></td>
 		            </tr>
 		            <tr>
 		                <td><b>Nơi phân bố:</b></td>
-		                <td>Ngải cứu có nguồn gốc ôn đới ở châu Âu, châu Á, bắc Phi, Alaska và bắc Mỹ, trong đó một số vùng coi nó là cỏ dại xâm lấn.</td>
+		                <td><textarea id="note4" readonly style="width:100%">Ngải cứu có nguồn gốc ôn đới ở châu Âu, châu Á, bắc Phi, Alaska và bắc Mỹ, trong đó một số vùng coi nó là cỏ dại xâm lấn.</textarea></td>
 		            </tr>
 		            <tr>
 		                <td><b>Công dụng:</td>
-		                <td>Cầm máu, Giảm đau nhức, Sát trùng, kháng khuẩn, Điều hòa khí huyết</td>
+		                <td><textarea id="note5" readonly style="width:100%">Cầm máu, Giảm đau nhức, Sát trùng, kháng khuẩn, Điều hòa khí huyết</textarea></td>
 		            </tr>
                 <tr>
 		                <td><b>Tác giả:</td>
-		                <td>Trần Hà</td>
+		                <td><textarea id="note6" readonly style="width:100%">Trần Hà</textarea></td>
 		            </tr>
 
         		</tbody>
@@ -198,7 +223,7 @@
 
             </div>
             <div class="container text-center">
-              <a class="btn btn-success"><i class="fa fa-floppy-o "></i> Lưu</a>
+              <a id="save" class="btn btn-success"><i class="fa fa-floppy-o "></i> Lưu</a>
             </div>
     	</div>
 

@@ -29,6 +29,27 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <script>
+              $(document).ready(function(){
+                  $("#edit").click(function(){
+                    $("#note").attr("readonly", false);
+                    $("#note1").attr("readonly", false);
+                    $("#note2").attr("readonly", false);
+                    $("#note3").attr("readonly", false);
+                    $("#note4").attr("readonly", false);
+                  });
+                  $("#save").click(function(){
+                    $("#note").attr("readonly", true);
+                    $("#note1").attr("readonly", true);
+                    $("#note2").attr("readonly", true);
+                    $("#note3").attr("readonly", true);
+                    $("#note4").attr("readonly", true);
+                  });
+              });
+
+        </script>
     </head>
 
 
@@ -156,34 +177,38 @@
             <div class="col-md-5">
                 <h3>
                     Bài thuốc chữa viêm đại tràng
-                    <button class="btn btn-info"><i class="fa fa-pencil pull-right"></i>Sửa</button>
+                    <button id="edit" class="btn btn-info"><i class="fa fa-pencil pull-right"></i>Sửa</button>
                 </h3>
                 <p><b>Thành phần:</b></p>
                 <p>
-                    1- Mật lợn tươi: 1 cái (lợn có trọng lượng từ 70kg đến 100kg).<br/>
-                    2- Nghệ vàng tươi: 02 lạng<br/>
-                    3- Mật ong: 30ml<br/>
-                    4- Ngải cứu tươi: 5 bó to ( Tương đương với khoảng 500g).<br/>
+                  <textarea id="note" readonly style="width:100%" rows="4">1- Mật lợn tươi: 1 cái (lợn có trọng lượng từ 70kg đến 100kg).
+2- Nghệ vàng tươi: 02 lạng
+3- Mật ong: 30ml
+4- Ngải cứu tươi: 5 bó to ( Tương đương với khoảng 500g).
+                  </textarea>
                 </p>
                 <p><b>Cách làm:</b></p>
                 <p>
-                    Nghệ tươi và ngải cứu rửa sạch, cắt nhỏ cho vào máy xay sinh tố xay cùng với 0,5 lít nước thật nhuyễn. Sau đó lọc qua vải phin lấy nước. Bã bỏ đi. Mật lợn lọc lấy nước (Vì mật lợn hay có sạn sỏi bên trong). Cho tất cả phần nước hỗn hợp nghệ + ngải cứu + nước mật lợn+ mật ong vào môt nồi, quấy đều, đun nhỏ lửa để cô lại thành cao. Cho phần cao đó vào một cái lọ bảo quản trong ngăn mát tủ lạnh để sử dụng dần.
-
+                  <textarea id="note1" readonly style="width:100%" rows="5">Nghệ tươi và ngải cứu rửa sạch, cắt nhỏ cho vào máy xay sinh tố xay cùng với 0,5 lít nước thật nhuyễn. Sau đó lọc qua vải phin lấy nước. Bã bỏ đi. Mật lợn lọc lấy nước (Vì mật lợn hay có sạn sỏi bên trong). Cho tất cả phần nước hỗn hợp nghệ + ngải cứu + nước mật lợn+ mật ong vào môt nồi, quấy đều, đun nhỏ lửa để cô lại thành cao. Cho phần cao đó vào một cái lọ bảo quản trong ngăn mát tủ lạnh để sử dụng dần.
+                  </textarea>
                 </p>
                 <p><b>Lưu ý:</b></p>
                 <p>
-                    Để tránh mất thời gian và đủ lượng dùng, ta nên làm một lần với tỷ lệ trên cho 4 hoặc 5 cái mật lợn.
+                  <textarea id="note2" readonly style="width:100%" rows="4">Để tránh mất thời gian và đủ lượng dùng, ta nên làm một lần với tỷ lệ trên cho 4 hoặc 5 cái mật lợn.
+                  </textarea>
                 </p>
                 <p><b>Cách dùng:</b></p>
                 <p>
-                    Mỗi ngày 2 lần: Sáng và tối, uống vào trước bữa ăn 30 phút. Liều lượng mỗi lần 1 viên to như hạt lạc là đủ.
+                  <textarea id="note3" readonly style="width:100%" rows="4">Mỗi ngày 2 lần: Sáng và tối, uống vào trước bữa ăn 30 phút. Liều lượng mỗi lần 1 viên to như hạt lạc là đủ.
+                  </textarea>
                 </p>
                 <p><b>Tác giả:</b></p>
                 <p>
-                    Trần Hà
+                  <textarea id="note4" readonly style="width:100%" rows="4">Trần Hà
+                  </textarea>
                 </p>
                 <div class="">
-                  <a class="btn btn-success"><i class="fa fa-floppy-o"></i> Lưu</a>
+                  <a id="save" class="btn btn-success"><i class="fa fa-floppy-o"></i> Lưu</a>
                 </div>
             </div>
     	</div>
