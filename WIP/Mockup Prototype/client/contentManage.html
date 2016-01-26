@@ -37,6 +37,12 @@
             background: #F8FAFF !important;
             color: #000000;
         }
+        .full-screen-modal {
+            position: fixed;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+        }
 
 	</style>
     <!-- Header -->
@@ -200,7 +206,7 @@
                     <td>25/01/2016</td>
                     <td>Quynh HT</td>
                     <td>12/02/2016</td>
-                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="#fsModal">Chi tiết</a></td>
                 </tr>
                 <tr>
                     <td>Cỏ nhọ nồi</td>
@@ -208,7 +214,7 @@
                     <td>12/02/2016</td>
                     <td>Ronaldo</td>
                     <td>30/03/2016</td>
-                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="#fsModal">Chi tiết</a></td>
                 </tr>
                 <tr>
                     <td>Huyết dụ</td>
@@ -216,15 +222,181 @@
                     <td>30/03/2016</td>
                     <td>John Lenon</td>
                     <td>25/04/2016</td>
-                    <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                    <td><a class="btn btn-info" data-toggle="modal" data-target="#fsModal">Chi tiết</a></td>
                 </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
+    <!--fullScreen Modal--->
 
 
+        <!-- modal -->
+        <div id="fsModal"
+             class="modal animated bounceIn"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="myModalLabel"
+             aria-hidden="true">
+
+          <!-- dialog -->
+          <div class="modal-dialog full-screen-modal">
+
+            <!-- content -->
+            <div class="modal-content">
+
+              <!-- header -->
+              <div class="modal-header">
+                <h1 id="myModalLabel"
+                    class="modal-title">
+                </h1>
+              </div>
+              <!-- header -->
+              
+              <!-- body -->
+              <div class="modal-body" style="width:100%">
+
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-7" style="margin-top: 30px">
+                        <div id="carousel-1" class="carousel slide" style="height:500px">
+
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators visible-lg">
+                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-1" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <!-- Begin Slide 1 -->
+                                <div class="item active">
+                                    <img src="assets/img/plants/1/ngaicuu.jpg" height="100%" alt="" width="100%">
+                                    <div class="carousel-caption">
+                                        <!-- <h3 class="carousel-title hidden-xs">Office BOOTSTRAP TEMPLATE</h3> -->
+                                        <!-- <p class="carousel-body">RESPONSIVE \ MULTI PAGE</p> -->
+                                    </div>
+                                </div>
+                                <!-- End Slide 1 -->
+
+                                <!-- Begin Slide 2 -->
+                                <div class="item">
+                                    <img src="assets/img/plants/1/ngaicuu1.jpg" height="100%" alt="" width="100%">
+                                    <div class="carousel-caption">
+                                        <!-- <h3 class="carousel-title hidden-xs">EASY TO CUSTOMIZE</h3> -->
+                                        <!-- <p class="carousel-body">BEAUTIFUL \ CLEAN \ MINIMAL</p> -->
+                                    </div>
+                                </div>
+                                <!-- End Slide 2 -->
+
+                                <!-- Begin Slide 3 -->
+                                <div class="item">
+                                    <img src="assets/img/plants/1/ngaicuu2.jpg" height="100%" alt="" width="100%">
+                                    <div class="carousel-caption">
+                                        <!-- <h3 class="carousel-title hidden-xs">MULTI-PURPOSE TEMPLATE</h3> -->
+                                        <!-- <p class="carousel-body">PORTFOLIO \ CORPORATE \ CREATIVE</p> -->
+                                    </div>
+                                </div>
+                                <!-- End Slide 3 -->
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-1" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <div class="row text-center">
+                        <button class="btn btn-danger">
+                            Delete
+                        </button>
+                        <button class="btn btn-primary">
+                            Ignore
+                        </button>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-5">
+                        <h3>Thông tin cây thuốc
+                        </h3>
+                        <table class="table table-striped">
+                        <colgroup>
+                            <col style="width:30%">
+                            <col style="width:70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td><b>Tên thường gọi:</b></td>
+                                <td>Ngải cứu</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tên khác:</b></td>
+                                <td>Thuốc cứu, ngải diệp, nhả ngải, quá sú, cỏ linh li</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tên khoa học:</b></td>
+                                <td>Artemisia vulgaris</td>
+                            </tr>
+                            <tr>
+                                <td><b>Đặc điểm:</b></td>
+                                <td>Là loại cỏ sống lâu năm, thân có rãnh dọc. Lá mọc so le không cuống, màu 2 mặt lá khác nhau, mặt trên nhẵn, màu lục sẫm. Mặt dưới trắng tro, có nhiều lông nhỏ</td>
+                            </tr>
+                            <tr>
+                                <td><b>Nơi phân bố:</b></td>
+                                <td>Ngải cứu có nguồn gốc ôn đới ở châu Âu, châu Á, bắc Phi, Alaska và bắc Mỹ, trong đó một số vùng coi nó là cỏ dại xâm lấn.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Công dụng:</td>
+                                <td>Cầm máu, Giảm đau nhức, Sát trùng, kháng khuẩn, Điều hòa khí huyết</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tác giả:</td>
+                                <td>Trần Hà</td>
+                            </tr>
+                            <tr>
+                                <td><b>Nội dung báo cáo:</td>
+                                <td>Ngải cứu có nguồn gốc ôn đới ở châu Âu, châu Á, bắc Phi, Alaska và bắc Mỹ, trong đó một số vùng coi nó là cỏ dại xâm lấn.</td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            </div>
+              <!-- body -->
+
+            <!--   
+              <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-dismiss="modal">
+                  close
+                </button>
+                <button class="btn btn-default">
+                  Default
+                </button>
+                <button class="btn btn-primary">
+                  Primary
+                </button>
+              </div>
+               -->
+
+            </div>
+            <!-- content -->
+
+          </div>
+          <!-- dialog -->
+
+        </div>
+<!-- modal -->
+    <!-- END -->
 
     <!-- Footer -->
     <footer>
