@@ -28,13 +28,6 @@
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -68,22 +61,10 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
+                  <li>
+                          <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                  </li>
             </ul>
-            <!-- /.navbar-top-links -->
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
@@ -242,95 +223,46 @@
 
     </div>
     <!-- /#wrapper -->
-    <div id="fsModal"
-             class="modal animated bounceIn"
-             tabindex="-1"
-             role="dialog"
-             aria-labelledby="myModalLabel"
-             aria-hidden="true">
+    <div id="fsModal" class="modal fade">
 
         <!-- dialog -->
-        <div class="modal-dialog full-screen-modal">
+        <div class="modal-dialog" style="width:95%">
 
             <!-- content -->
             <div class="modal-content">
 
               <!-- header -->
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">×</button>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="text-center"><b>Thông tin cây thuốc</b></h4>
               </div>
               <!-- header -->
 
               <!-- body -->
-              <div class="modal-body" style="width:100%">
+              <div class="modal-body">
 
                 <div class="container">
-                <div class="row">
-                    <div class="col-md-7" style="margin-top: 30px">
-                        <div id="carousel-1" class="carousel slide" style="height:500px">
-
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators visible-lg">
-                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-1" data-slide-to="2"></li>
-                            </ol>
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <!-- Begin Slide 1 -->
+                    <div class="col-md-7">
+                         
                                 <div class="item active">
-                                    <img src="assets/img/plants/1/ngaicuu.jpg" height="100%" alt="" width="100%">
+                                    <img src="picture/ngaicuu2.jpg">
                                     <div class="carousel-caption">
-                                        <!-- <h3 class="carousel-title hidden-xs">Office BOOTSTRAP TEMPLATE</h3> -->
-                                        <!-- <p class="carousel-body">RESPONSIVE \ MULTI PAGE</p> -->
                                     </div>
                                 </div>
-                                <!-- End Slide 1 -->
 
-                                <!-- Begin Slide 2 -->
-                                <div class="item">
-                                    <img src="assets/img/plants/1/ngaicuu1.jpg" height="100%" alt="" width="100%">
-                                    <div class="carousel-caption">
-                                        <!-- <h3 class="carousel-title hidden-xs">EASY TO CUSTOMIZE</h3> -->
-                                        <!-- <p class="carousel-body">BEAUTIFUL \ CLEAN \ MINIMAL</p> -->
-                                    </div>
-                                </div>
-                                <!-- End Slide 2 -->
-
-                                <!-- Begin Slide 3 -->
-                                <div class="item">
-                                    <img src="assets/img/plants/1/ngaicuu2.jpg" height="100%" alt="" width="100%">
-                                    <div class="carousel-caption">
-                                        <!-- <h3 class="carousel-title hidden-xs">MULTI-PURPOSE TEMPLATE</h3> -->
-                                        <!-- <p class="carousel-body">PORTFOLIO \ CORPORATE \ CREATIVE</p> -->
-                                    </div>
-                                </div>
-                                <!-- End Slide 3 -->
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-1" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
                         <div class="row text-center">
-                          <button class="btn btn-danger">
+                          <a class="btn btn-danger" href="plantManagement.html">
                               Delete
-                          </button>
-                          <button class="btn btn-primary">
+                          </a>
+                          <a class="btn btn-primary" href="plantManagement.html">
                               Cancel
-                          </button>
+                          </a>
                         </div>
                     </div>
 
 
                     <div class="col-md-5">
-                        <h3>Thông tin cây thuốc
-                        </h3>
+
                         <table class="table table-striped">
                         <colgroup>
                             <col style="width:30%">
@@ -373,7 +305,7 @@
                         </table>
 
                     </div>
-                </div>
+
 
             </div>
 
@@ -402,7 +334,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
-
 </body>
 
 </html>
