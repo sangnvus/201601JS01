@@ -99,8 +99,8 @@
             <div class="row">
                 <ul class="nav nav-tabs">
                       <li><a data-toggle="tab" href="#newArticle">Bài viết mới</a></li>
-                      <li><a data-toggle="tab" href="#edit">Bài viết đã sửa</a></li>
-                      <li><a data-toggle="tab" href="#report">Bài viết bị vi phạm</a></li>
+                      <li><a data-toggle="tab" href="#editedArticle">Bài viết đã sửa</a></li>
+                      <li><a data-toggle="tab" href="#reportedArticle">Bài viết bị vi phạm</a></li>
 
                 </ul>
                 <div class="tab-content ">
@@ -122,24 +122,24 @@
                                 <td>Cỏ nến</td>
                                 <td>John Lenon</td>
                                 <td>25/01/2016</td>
-                                <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                                <td><a class="btn btn-info" data-toggle="modal" data-target="#newPlantArticleMoal">Chi tiết</a></td>
                             </tr>
                             <tr>
                                 <td>Cỏ nhọ nồi</td>
                                 <td>Quynh HT</td>
                                 <td>12/02/2016</td>
-                                <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                                <td><a class="btn btn-info" data-toggle="modal" data-target="#newPlantArticleMoal">Chi tiết</a></td>
                             </tr>
                             <tr>
                                 <td>Huyết dụ</td>
                                 <td>Ronaldo</td>
                                 <td>30/03/2016</td>
-                                <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                                <td><a class="btn btn-info" data-toggle="modal" data-target="#newPlantArticleMoal">Chi tiết</a></td>
                             </tr>
                         </tbody>
                       </table>
                     </div>
-                    <div id="edit" class="tab-pane fade content-manage">
+                    <div id="editedArticle" class="tab-pane fade content-manage">
                       <br/>
                       <h3>Danh sách cây thuốc đã sửa</h3>
                       <table class="table table-striped">
@@ -156,24 +156,24 @@
                                 <td>Cỏ nến</td>
                                 <td>John Lenon</td>
                                 <td>25/01/2016</td>
-                                <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                                <td><a class="btn btn-info" data-toggle="modal" data-target="#newPlantArticleMoal">Chi tiết</a></td>
                             </tr>
                             <tr>
                                 <td>Cỏ nhọ nồi</td>
                                 <td>Quynh HT</td>
                                 <td>12/02/2016</td>
-                                <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                                <td><a class="btn btn-info" data-toggle="modal" data-target="#newPlantArticleMoal">Chi tiết</a></td>
                             </tr>
                             <tr>
                                 <td>Huyết dụ</td>
                                 <td>Ronaldo</td>
                                 <td>30/03/2016</td>
-                                <td><a class="btn btn-info" data-toggle="modal" data-target="">Chi tiết</a></td>
+                                <td><a class="btn btn-info" data-toggle="modal" data-target="#newPlantArticleMoal">Chi tiết</a></td>
                             </tr>
                         </tbody>
                       </table>
                     </div>
-                    <div id="report" class="tab-pane fade content-manage ">
+                    <div id="reportedArticle" class="tab-pane fade content-manage ">
                       <br/>
                       <h3>Danh sách cây thuốc vi phạm</h3>
                       <table class="table table-striped">
@@ -223,6 +223,7 @@
 
     </div>
     <!-- /#wrapper -->
+    <!-- begin: reported medicinal plant article modal -->
     <div id="fsModal" class="modal fade">
 
         <!-- dialog -->
@@ -242,26 +243,26 @@
               <div class="modal-body">
 
                 <div class="container">
-                    <div class="col-md-7">
+                    <div class="col-md-4">
 
                                 <div class="item active">
-                                    <img src="picture/ngaicuu2.jpg">
+                                    <img style="height:300px" src="picture/ngaicuu2.jpg">
                                     <div class="carousel-caption">
                                     </div>
                                 </div>
 
                         <div class="row text-center">
                           <a class="btn btn-danger" href="plantManagement.html">
-                              Delete
+                              Xóa bài viết
                           </a>
                           <a class="btn btn-primary" href="plantManagement.html">
-                              Cancel
+                              Thoát
                           </a>
                         </div>
                     </div>
 
 
-                    <div class="col-md-5">
+                    <div class="col-md-8">
 
                         <table class="table table-striped">
                         <colgroup>
@@ -318,6 +319,100 @@
           <!-- dialog -->
 
         </div>
+
+    <!--begin: new article, edited medicinal plant article modal-->
+    <div id="newPlantArticleMoal" class="modal fade">
+
+        <!-- dialog -->
+        <div class="modal-dialog" style="width:95%">
+
+            <!-- content -->
+            <div class="modal-content">
+
+              <!-- header -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="text-center"><b>Thông tin bài viết</b></h4>
+              </div>
+              <!-- header -->
+
+              <!-- body -->
+              <div class="modal-body">
+
+                <div class="container">
+                    <div class="col-md-4">
+
+                                <div class="item active">
+                                    <img style="height:300px" src="picture/ngaicuu2.jpg">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+
+                        <div class="row text-center">
+                          <a class="btn btn-danger" href="plantManagement.html">
+                              Duyệt bài viết
+                          </a>
+                          <a class="btn btn-primary" href="plantManagement.html">
+                              Không duyệt bài viết
+                          </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-8">
+
+                        <table class="table table-striped">
+                        <colgroup>
+                            <col style="width:30%">
+                            <col style="width:70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td><b>Tên thường gọi:</b></td>
+                                <td>Ngải cứu</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tên khác:</b></td>
+                                <td>Thuốc cứu, ngải diệp, nhả ngải, quá sú, cỏ linh li</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tên khoa học:</b></td>
+                                <td>Artemisia vulgaris</td>
+                            </tr>
+                            <tr>
+                                <td><b>Đặc điểm:</b></td>
+                                <td>Là loại cỏ sống lâu năm, thân có rãnh dọc. Lá mọc so le không cuống, màu 2 mặt lá khác nhau, mặt trên nhẵn, màu lục sẫm. Mặt dưới trắng tro, có nhiều lông nhỏ</td>
+                            </tr>
+                            <tr>
+                                <td><b>Nơi phân bố:</b></td>
+                                <td>Ngải cứu có nguồn gốc ôn đới ở châu Âu, châu Á, bắc Phi, Alaska và bắc Mỹ, trong đó một số vùng coi nó là cỏ dại xâm lấn.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Công dụng:</b></td>
+                                <td>Cầm máu, Giảm đau nhức, Sát trùng, kháng khuẩn, Điều hòa khí huyết</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tác giả:</b></td>
+                                <td>Trần Hà</td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+
+
+            </div>
+
+            </div>
+
+            </div>
+            <!-- content -->
+
+          </div>
+          <!-- dialog -->
+
+        </div>
+
     <!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
