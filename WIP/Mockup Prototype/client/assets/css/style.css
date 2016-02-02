@@ -1,20 +1,4 @@
-
-/*
-Theme Name:Office
-Theme URI:http://ThemeWagon.com/
-Author:ThemeWagon
-Author URI:http://ThemeWagon.com/
-Description:Creative is a single page html template based on bootstrap 3
-Version:1.0.0
-License:GNU General Public License v2 or later
-License URI:http://www.gnu.org/licenses/gpl-2.0.html
-*/
-
- /*
-* ==========================================================================
-* Global
-* ==========================================================================
-*/
+ 
 .btn-primary{
   margin-left: 20px;
 }
@@ -53,15 +37,15 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 
-@media (min-width: 1068px) and (max-width: 1400px) { 
+@media (min-width: 1068px) and (max-width: 1400px) {
  .post-sidebar{
     margin-top: 15px;
     border:1px solid #DDD;
     padding: 5px;
   }
- 
+
 }
-@media (min-width: 750px) and (max-width: 1060px) { 
+@media (min-width: 750px) and (max-width: 1060px) {
  .post-sidebar{
     width:204px;
     margin-top: 15px;
@@ -75,7 +59,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   width: 100%;
 }
 .blog-post{
- margin-bottom: 30px;   
+ margin-bottom: 30px;
 }
 .blog-image{
     margin-bottom: 20px;
@@ -88,11 +72,11 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
     margin-top: 15px;
     border:1px solid #DDD;
     padding: 5px;
-  
+
 
  }
 .form-group{
-    
+
     padding:20px;
 }
 ul li{
@@ -128,7 +112,7 @@ float: right;
 
 
 .title-text{
-  font-family: 'Raleway', sans-serif;  
+  font-family: 'Raleway', sans-serif;
   letter-spacing: .2px;
   font-size: 40px;
 }
@@ -150,7 +134,7 @@ body {
     font-size: 15px;
     line-height: 24px;
     background:#F8FAFF;
-   
+
 }
 
 a {
@@ -171,21 +155,21 @@ address {
     }
 
 
-@media (min-width: 50px) and (max-width: 988px) { 
- 
+@media (min-width: 50px) and (max-width: 988px) {
+
  address {
     margin-top: 28px;
     margin-left: 21px;
     }
- 
+
 }
-@media (min-width: 988px) and (max-width: 1200px) { 
- 
+@media (min-width: 988px) and (max-width: 1200px) {
+
  address {
     margin-top: 28px;
     margin-left: -58px;
     }
- 
+
 }
 /*
 * ==========================================================================
@@ -255,7 +239,7 @@ li.active{
 * Brand / Project Name
 * ==========================================================================
 */
-.navbar-brand {  
+.navbar-brand {
   z-index: 9999px;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 28px;
@@ -270,8 +254,8 @@ li.active{
   padding: 30px;
   letter-spacing: .9px;
 }
-@media (min-width: 800px){ 
- 
+@media (min-width: 800px){
+
 }
  }
 
@@ -283,7 +267,7 @@ li.active{
     }
 
 #banners{
-    
+
     margin-top: 30px;
     margin-bottom: 10px;
 }
@@ -294,8 +278,8 @@ li.active{
     padding-top: 120px;
 }
 
-@media (min-width: 100px) and (max-width: 800px) { 
- 
+@media (min-width: 100px) and (max-width: 800px) {
+
     #banner-home{
     background-image:url('../img/slider/1.jpg');
     height:450px;
@@ -323,15 +307,15 @@ li.active{
     padding: 30px 10px;
     /*background: url(../img/logo.png) 20px center no-repeat; */
 }
-@media (min-width: 50px) and (max-width: 768px) { 
+@media (min-width: 50px) and (max-width: 768px) {
         .header a.brand {
         width: 170px;
         margin-top:-41px;
         margin-top: -41px;
         position: absolute;
         font-size: 37px;
-     } 
- }  
+     }
+ }
 
 .paragraph-text{
     text-align: justify;
@@ -361,7 +345,7 @@ li.active{
     padding: 0px 15px 15px 0;
 
 }
-p.blog-text{   
+p.blog-text{
     font-size: 16px;
     letter-spacing: .1px;
     font-family: 'Arial';
@@ -459,8 +443,8 @@ p.blog-text{
     padding: 0 10px 0 10px;
     color: white;
     background: #1BBD9B;
-    border-radius: 3px; 
-    transition:.4s;  
+    border-radius: 3px;
+    transition:.4s;
 }
 .services-group{
   padding: 10px;
@@ -496,7 +480,7 @@ footer .widget i {
 }
 footer{
    margin-top:40px;
-   padding: 20px; 
+   padding: 20px;
    background: black;
 }
 
@@ -542,20 +526,20 @@ footer h3 {
         margin-top: 10px;
         padding: 0;
     }
- 
+
     #custom-search-input .search-query {
         padding-right: 3px;
         padding-right: 4px \9;
         padding-left: 3px;
         padding-left: 4px \9;
         /* IE7-8 doesn't have border-radius, so don't indent the padding */
- 
+
         margin-bottom: 0;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
     }
- 
+
     #custom-search-input button {
         border: 0;
         background: none;
@@ -571,12 +555,12 @@ footer h3 {
         border-radius: 3px;
         color:#D9230F;
     }
- 
+
     .search-query:focus + button {
-        z-index: 3;   
+        z-index: 3;
     }
 
-   
+
     /*
 * ==========================================================================
 * Image Card
@@ -670,7 +654,7 @@ footer h3 {
 * ==========================================================================
 */
 .panel-image {
-    position: relative;   
+    position: relative;
 }
 .panel-image img.panel-image-preview {
     width: 100%;
@@ -697,7 +681,7 @@ footer h3 {
 .panel-image ~ input[type=checkbox] {
     position:absolute;
     top:- 30px;
-    z-index: -1;   
+    z-index: -1;
 }
 
 .panel-image ~ input[type=checkbox] ~ .panel-body {

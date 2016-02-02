@@ -24,6 +24,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <script src="js/scripts.js"></script>
     </head>
 
 
@@ -72,7 +73,7 @@
                                 </li>
                                 <li class="divider"></li>
                                 <li><a href="changePassword.html"><i class="fa fa-user fa-pencil"></i> Đổi mật khẩu</a>
-                                </li> 
+                                </li>
                                 <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a>
                                 </li>
 
@@ -291,20 +292,6 @@
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
-    </script>
-    <script>
-        $(document).ready(function () {
-            (function ($) {
-
-                $('#filter').keyup(function () {
-                    var rex = new RegExp($(this).val(), 'i');
-                    $('.searchable .searchable-item').hide();
-                    $('.searchable .searchable-item').filter(function () {
-                        return rex.test($(this).text());
-                    }).show();
-                })
-            }(jQuery));
-        });
     </script>
   </body>
 </html>
