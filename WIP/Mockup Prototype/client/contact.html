@@ -16,7 +16,9 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/animate.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
-
+        <link rel="stylesheet" href="assets/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+  	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  	    <script src="js/star-rating.js" type="text/javascript"></script>
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="assets/ico/favicon.ico">
@@ -72,7 +74,7 @@
                                     </li>
                                     <li class="divider"></li>
                                     <li><a href="changePassword.html"><i class="fa fa-user fa-pencil"></i> Đổi mật khẩu</a>
-                                    </li> 
+                                    </li>
                                     <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a>
                                     </li>
 
@@ -103,6 +105,11 @@
                     <p>Phone: 1.800.245.356</p>
                     <p>Fax: 1.800.245.357</p>
                     <em class="block-author">Email: hello@LawOffice.org </em> <br>
+                    <p>Đánh giá nhà thuốc:</p>
+                    <p>
+                      <input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm"
+                      data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
+                    </p>
                     <br>
                     <p class="lead">Social Link</p><hr>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
