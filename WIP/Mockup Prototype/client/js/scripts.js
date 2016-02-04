@@ -51,6 +51,11 @@ jQuery(document).ready(function() {
 });
 <!-- end register-->
 
+<!--begin: create plant-->
+
+
+<!--end: create plant-->
+
 <!--begin: edit medicinal plant and remedy article-->
 $(document).ready(function(){
     $("#edit").click(function(){

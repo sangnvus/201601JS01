@@ -26,6 +26,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- Javascript -->
+    <script src="js/scripts.js"></script>
 </head>
   <body>
 
@@ -95,29 +98,24 @@
                 <input type="file" style="float:left;width:100%;">
               </div>
               <br><br><br><br>
-              <div>
-                <input type="text" placeholder="Nhập tên cây thuốc" style="float:left;width:100%;">
+              <div> 
+                <input type="text" placeholder="Nhập tên cây thuốc" style="float:left;width:100%;" id="nameOfMedicinalPlant">
               </div>
               <br><br><br>
-
               <div>
-                <textarea placeholder="Nhập tên gọi khác" style="float:left;width:100%;"></textarea>
+                <textarea placeholder="Nhập tên gọi khác" style="float:left;width:100%;" id="otherNameOfMedicinalPlant"></textarea>
               </div>
               <br><br><br><br>
               <div>
-                <textarea placeholder="Nhập tên khoa học" style="float:left;width:100%;"></textarea>
+                <input placeholder="Nhập tên khoa học" style="float:left;width:100%;" id="scienceName"></input>
+              </div>
+              <br><br><br>
+              <div>
+                <textarea placeholder="Nhập đặc tính" style="float:left;width:100%;" id="characteristicOfMedicinalPlant"></textarea>
               </div>
               <br><br><br><br>
               <div>
-                <textarea placeholder="Nhập đặc điểm" style="float:left;width:100%;"></textarea>
-              </div>
-              <br><br><br><br>
-              <div>
-                <textarea placeholder="Nhập đặc tính" style="float:left;width:100%;"></textarea>
-              </div>
-              <br><br><br><br>
-              <div>
-                <textarea placeholder="Nhập công dụng của cây thuốc" style="float:left;width:100%;"></textarea>
+                <textarea placeholder="Nhập công dụng của cây thuốc" style="float:left;width:100%;" id="utilityOfMedicinalPlant"></textarea>
               </div>
               <br><br><br><br>
               <div>
@@ -126,19 +124,19 @@
               </div>
               <br><br><br><br>
               <div>
-                <input type="text" placeholder="Nhập lưu ý cho cây thuốc" style="float:left;width:100%;">
+                <input type="text" placeholder="Nhập lưu ý cho cây thuốc" style="float:left;width:100%;" id="note">
               </div>
               <br> <br><br>
               <div>
-                <input type="text" placeholder="Nhập nguồn gốc xuất xứ của cây thuốc" style="float:left;width:100%;">
+                <input type="text" placeholder="Nhập nguồn gốc xuất xứ của cây thuốc" style="float:left;width:100%;" id="theOrigin">
               </div>
               <br> <br><br>
               <div>
-                <input type="text" placeholder="Nhập điều kiện khí hậu nơi trồng của cây thuốc" style="float:left;width:100%;">
+                <input type="text" placeholder="Nhập điều kiện khí hậu nơi trồng của cây thuốc" style="float:left;width:100%;" id="weather">
               </div>
               <br> <br><br>
               <div class="col-sm-12 text-center">
-                  <a href="plant.html" class="btn btn-lg btn-success">Đóng góp cây thuốc</a>
+                  <button class="btn btn-lg btn-success" id="createNewPlant">Đóng góp cây thuốc</button>
               </div>
             </div>
 
