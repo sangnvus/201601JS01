@@ -1,0 +1,46 @@
+
+ 
+2 Report 1: 
+3  - Project Introduction 
+4  - Project Plan (Schedule, Project Plan in MS Word, CM Plan) 
+5  - SRS => User 
+6  - Q&A Sheet bang tieng Nhat 
+7  - Progress Report cho giai doan 1 (bang tieng Nhat) 
+8  - SRS , PP Review check list 
+9 Report 2: 
+10  - Architecture Design 
+11  - Screen Design 
+12  - Database Design 
+13  - Class/Component Design 
+14  - Progress Report cho giai doan 2 (bang tieng Nhat) 
+15  - Design review checklists 
+16  Report 3: 
+17  - Test Plan 
+18  - Test Cases (System Test case, Integration test cases) 
+19  - Review checklist (cho test cases, Test Plan) 
+20  - Progress Report cho giai doan 3 (Phan Construction co lam Test Case, Plan) 
+21   
+22  Report 4: 
+23   - Source codes 
+24   - Code review checklist 
+25   - UT Cases 
+26   - UT Review Check List 
+27   
+28  Report 5:  
+29   - Test Report, Test result 
+30   - Quality Report 
+31   - Progress Report (cho giai doan coding in Construction) 
+32     
+33  Report 6 (Termination phases) 
+34   - Final documents + source codes 
+35   - Installation guide 
+36   - User guideline 
+37   - Project Result Assessment 
+38   - Slides for final presentation 
+39 
+ 
+40 
+ 
+41   // 
+42   - Update report 1->6 
+43   - Document Review 
