@@ -160,7 +160,7 @@
 
             <div class="col-md-5">
                 <h3>Bài thuốc chữa viêm đại tràng
-					<button class="btn btn-warning pull-right">Báo cáo</button>
+					      <button class="btn btn-warning pull-right" data-toggle="modal" data-target="#report_modal">Báo cáo</button>
 				</h3>
                 <p><b>Thành phần:</b></p>
                 <p>
@@ -231,6 +231,25 @@
                     <img class="img-responsive portfolio-item" src="assets/img/slider/blog2.jpg" alt="" style="width:500px;height:200px;">
                 </a>
             </div>
+        </div>
+        <!--Report Modal -->
+
+        <div class="modal fade" id="report_modal" role="dialog">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			<div class="modal-header">
+    		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+    		          <h4 class="modal-title">Báo cáo</h4>
+    	          	</div>
+    	          	<div class="modal-body">
+              			<textarea class="form-control" style="min-width: 100%" placeholder="Nhập lí do báo cáo"></textarea>
+            		</div>
+            		<div class="modal-footer">
+    		          	<button type="button" class="btn btn-default" data-dismiss="modal">Gửi</button>
+    		        </div>
+            </div>
+        		</div>
+        	</div>
         </div>
         <!--comment-->
     	<div id="comment-block" class="post-modal-comment-block">
