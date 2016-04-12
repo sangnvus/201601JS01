@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- meta data & title -->
+    <meta charset="utf-8">
+    <title>Office</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS --> 
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
+
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- Javascript -->
+    <script src="js/scripts.js"></script>
+</head>
+  <body>
+
+          <!-- Header -->
+
+              <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+                  <div class="container">
+
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                          </button>
+
+                          <a class="navbar-brand wow fadeInDownBig" href="index.html"><img src="assets/img/slider/Office.png" width="100" alt="Office"></a>
+                      </div>
+
+                      <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                          <ul class="nav navbar-nav pull-right">
+                              <li>
+                                  <a href="index.html">TRANG CHỦ</a>
+                              </li>
+                              <li class="active">
+                                  <a href="plant.html">CÂY THUỐC</a>
+                              </li>
+                              <li>
+                                  <a href="remedy.html">BÀI THUỐC</a>
+                              </li>
+                              <li>
+                                  <a href="searchDrugstore.html">NHÀ THUỐC</a>
+                              </li>
+                              <li>
+                                  <a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a>
+                              </li>
+                              <li class="dropdown">
+
+                                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                      <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu dropdown-user">
+                                      <li><a href="profile.html"><i class="fa fa-user fa-fw"></i> Trang cá nhân</a>
+                                      </li>
+                                      <li class="divider"></li>
+                                      <li><a href="changePassword.html"><i class="fa fa-user fa-pencil"></i> Đổi mật khẩu</a>
+                                      </li>
+                                      <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a>
+                                      </li>
+
+                                  </ul>
+                                  <!-- /.dropdown-user -->
+                                </li>
+                              <!-- /.dropdown -->
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+
+<!--end-->
+          <div class="col-md-offset-2 col-md-8">
+              <div style="margin-top:5%">
+                <h2>Đóng góp cây thuốc mới</h2><br>
+              </div>
+              <div>
+                <p style="float:left">Chọn ảnh đại diện</p>
+                <input type="file" style="float:left;width:100%;">
+              </div>
+              <br><br><br><br>
+              <div>
+                <input type="text" placeholder="Nhập tên cây thuốc" style="float:left;width:100%;" id="nameOfMedicinalPlant">
+              </div>
+              <br><br><br>
+              <div>
+                <textarea placeholder="Nhập tên gọi khác" style="float:left;width:100%;" id="otherNameOfMedicinalPlant"></textarea>
+              </div>
+              <br><br><br><br>
+              <div>
+                <input placeholder="Nhập tên khoa học" style="float:left;width:100%;" id="scienceName"></input>
+              </div>
+              <br><br><br>
+              <div>
+                <textarea placeholder="Nhập đặc tính" style="float:left;width:100%;" id="characteristicOfMedicinalPlant"></textarea>
+              </div>
+              <br><br><br><br>
+              <div>
+                <textarea placeholder="Nhập công dụng của cây thuốc" style="float:left;width:100%;" id="utilityOfMedicinalPlant"></textarea>
+              </div>
+              <br><br><br><br>
+              <div>
+                <p style="float:left">Chọn ảnh minh hoạ</p>
+                <input type="file" style="float:left;width:100%;">
+              </div>
+              <br><br><br><br>
+              <div>
+                <input type="text" placeholder="Nhập lưu ý cho cây thuốc" style="float:left;width:100%;" id="note">
+              </div>
+              <br> <br><br>
+              <div>
+                <input type="text" placeholder="Nhập nguồn gốc xuất xứ của cây thuốc" style="float:left;width:100%;" id="theOrigin">
+              </div>
+              <br> <br><br>
+              <div>
+                <input type="text" placeholder="Nhập điều kiện khí hậu nơi trồng của cây thuốc" style="float:left;width:100%;" id="weather">
+              </div>
+              <br> <br><br>
+              <div class="col-sm-12 text-center">
+                  <button class="btn btn-lg btn-success" id="createNewPlant">Đóng góp cây thuốc</button>
+              </div>
+            </div>
+
+            <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="js/wow.min.js"></script>
+            <script>
+              new WOW().init();
+            </script>
+  </body>
+</html>
